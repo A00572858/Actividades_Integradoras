@@ -5,6 +5,49 @@ En este programa se tiene un grafo de 10 nodos y 30 conecciones, con los cuales 
 BFS buscando el camino más corto y el más barato entre dos nodos ingresados.
 En el programa se utilizan tambien hashes para saber de qué país se esta hablando al ingresar
 el número de nodo que lo representa
+## Funciones del programa:
+## _main()_
+### createh()
+Función que coloca en las listas de llaves y valores del Hash los valores 
+que se le dan en el main.\
+Complejidad O(n) porque hace lo mismo para el número de elementos totales de los vectores.
+
+### printcountries()
+Esta función imprime los países opciones para las consultas.\
+O(n) ya que va aumentando la variable i conforme se imprimen los países
+
+## _program.h_
+### findCheapestPrice()
+Función para encontrar el camino más barato entre dos grafos.\
+Complejidad O(v+e) por ser un algoritmo de búsqueda BFS (Breadth_First Search).
+Usar un BFS para encontrar el camino más corto en un grafo sólo es recomendable con 
+grafos pequeños ya que como se tiene que explorar todo el grafo, con estructuras de miles 
+de nodos puede ser muy pesado y lento.
+
+### findQuickestPath()
+Esta función hace lo mismo que la pasada pero en vez de imprimir 
+el camino más barato, éste imprime el camino más rápido.\
+Complejidad O(v+e) por ser un algoritmo de búsqueda BFS (Breadth_First Search).
+
+## _hash.h_
+### indexOf()
+Función que regresa el índice del array de llaves en el que se encuentra un valor ingresado.\
+Complejidad O(1) porque se aseguró que haya el mismo número de valores que de índices de los arrays.
+
+### put()
+Funcion que coloca en los arrays de las claves y los valores, la clave y el valor ingresados 
+haciendo la unión de los mismos con el mismo índice en los dos arrays.\
+Complejidad O(1) ya que son definiciones directas y no hay ciclos.
+
+### get()
+Regresa el valor asignado a la clave ingresada.\
+Compllejidad O(1) ya que es una consulta directa porque se aseguró 
+que no hubieran más elementos que índices en los arrays.
+
+### clear()
+Función que borra los dos arrays creados de claves y valores.\
+Complejidad O(1) porque se borran los arrays directamente con una función "delete" ya integrada.
+
 ## Grafo
 ### Precio
 ![alt tag](https://raw.githubusercontent.com/A00572858/TC1031_Integral5/main/graph.png)
