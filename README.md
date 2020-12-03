@@ -1,7 +1,7 @@
 # Actividades_Integradoras
 
 # Correcciones:
-### (Ya se hicieron las correcciones de las integrales, solo está pendiente checar la "corrección final" en la Integral 2)
+### NOTA: (Ya se hicieron las correcciones de las integrales, solo está pendiente checar la "corrección final" en la Integral 2)
 ## Integral 1:
 Se agregaron casos de prueba, lectura y escritura de archivos, se hizo un análisis de complejidad correcto y completo a cada algoritmo.\
 Se describen las funciones del programa y se explica como usar las estructuras.\
