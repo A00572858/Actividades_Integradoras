@@ -11,7 +11,7 @@ Se agregaron casos de prueba, lectura y escritura de archivos, se hizo un análi
 Se describen las funciones del programa y se explica como usar las estructuras.\
 SICT0301B Evalúa los componentes.\
 SEG0702A Tecnologías de Vanguardia.\
- \
+
  ### _corrección final_
  Mandaba el error\
  _"mun_map_chunk(): invalid pointer\
