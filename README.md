@@ -17,7 +17,7 @@ SEG0702A Tecnologías de Vanguardia.
  Mandaba el error\
  _"mun_map_chunk(): invalid pointer\
  exited, aborted"_\
- Esto se debía a un error en la función _clear()_ del archivo _hash.h_ que se hacia el delete de la variable apuntador de un array
+ Esto se debía a un error en la función _clear()_ (del archivo _hash.h_ líneas: _113 y 114_) que se hacia el delete de la variable apuntador de un array
  sin definir que era un array, se hizo el cambio y ahora corre sin problemas.
 
 ## Integral 3:
