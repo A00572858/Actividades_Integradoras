@@ -5,23 +5,40 @@
 #include <iostream>
 #include <cstring>
 #include <string>
+#include <fstream>
 #include <sstream>
 #include "disjointsets.h"
 
 using namespace std;
 
-//Funcion que imprime el caso de prueba
-// Complejidad O(1) ya que son solo asignaciones de variables y no hay ciclos.
+/*
+*Funcion que imprime el caso de prueba leyendo los nombres de un archivo .txt
+*y escribe en un archivo el organigrama final.
+*Complejidad O(1) ya que son solo asignaciones de variables y no hay ciclos.
+*/
 void casosdeprueba(){
-    vector<string> v = {"Luis","Romel","David","Daniel","Rodrigo","Jesus","Benji"};
-        Disjoint disj(v);
-        disj.crearunion(0,2);
-        disj.crearunion(1,2);
-        disj.crearunion(4,5);
-        disj.crearunion(5,6);
-        disj.crearunion(2,4);
-        cout << disj.toString() << endl;
-        disj.clear();
+    vector<string> v;
+    string archivo = "nombres.txt", line;
+    ifstream lee(archivo);
+    if (lee.is_open()){
+        while (getline(lee,line)){
+            v.push_back(line);
+        }
+    }
+    lee.close();
+    Disjoint disj(v);
+    disj.crearunion(0,2);
+    disj.crearunion(1,2);
+    disj.crearunion(4,5);
+    disj.crearunion(5,6);
+    disj.crearunion(2,4);
+    cout << disj.toString() << endl;
+    ofstream fileout("Organigrama.txt");
+    if (fileout.is_open()){
+        fileout << disj.toString();
+    }
+    fileout.close();
+    disj.clear();
 }
 
 /*
