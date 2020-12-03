@@ -110,8 +110,8 @@ Value Hash<Key, Value>::get(const Key k) {
 //O(1) porque se borran los arrays directamente con una función ya integrada
 template <class Key, class Value>
 void Hash<Key, Value>::clear() {
-	delete keys;
-	delete values;
+	delete [] keys;
+	delete [] values;
 }
 
 #endif
