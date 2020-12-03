@@ -7,8 +7,9 @@ quien es el jefe de quien.
 ## Funciones del programa:
 ## _main()_
 ### casosdeprueba()
-Funcion que imprime el caso de prueba.\
-Complejidad O(1) ya que son solo asignaciones de variables y no hay ciclos.
+Funcion que imprime el caso de prueba leyendo los nombres de un archivo .txt
+y escribe en un archivo el organigrama final.\
+Complejidad O(n) ya que se lee del archivo cada nombre que se ingresara al array.
 
 ### crearorganigrama()
 Esta funcion crea un disjoint sets desde cero dando el título de jefe a especificas personas.\
