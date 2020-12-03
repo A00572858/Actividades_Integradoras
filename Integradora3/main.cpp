@@ -14,7 +14,7 @@ using namespace std;
 /*
 *Funcion que imprime el caso de prueba leyendo los nombres de un archivo .txt
 *y escribe en un archivo el organigrama final.
-*Complejidad O(1) ya que son solo asignaciones de variables y no hay ciclos.
+*Complejidad O(n) ya que se lee del archivo cada nombre que se ingresara al array.
 */
 void casosdeprueba(){
     vector<string> v;
