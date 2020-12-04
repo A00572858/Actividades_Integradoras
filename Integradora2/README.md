@@ -50,10 +50,10 @@ Complejidad O(1) porque se borran los arrays directamente con una función "dele
 
 ## Grafo
 ### Precio
-![alt tag](https://raw.githubusercontent.com/A00572858/TC1031_Integral5/main/graph.png)
+![alt tag](https://raw.githubusercontent.com/A00572858/Actividades_Integradoras/main/graph.png)
 ### Horas
 
-![alt tag](https://raw.githubusercontent.com/A00572858/TC1031_Integral5/main/graph2.png)
+![alt tag](https://raw.githubusercontent.com/A00572858/Actividades_Integradoras/main/graph2.png)
 ## Casos de prueba:
 ## (Opción 10 dentro del menú del programa para más casos prueba)
 ## Caso 1
